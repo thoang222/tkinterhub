@@ -98,7 +98,7 @@ class MainApp:
         if current_width < 200:
             current_width += 10
             self.menubar_frame.config(width=current_width)
-            self.root.after(15, self.extennd_animation)
+            self.root.after(10, self.extennd_animation)
 
     def extend_menubar(self):
         self.extennd_animation()
@@ -110,7 +110,7 @@ class MainApp:
         if current_width > 45:
             current_width -= 10
             self.menubar_frame.config(width=current_width)
-            self.root.after(15, self.flod_menubar_animation)
+            self.root.after(10, self.flod_menubar_animation)
 
     def flod_menubar(self):
         self.flod_menubar_animation()
